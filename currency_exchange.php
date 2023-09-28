@@ -105,7 +105,7 @@ if (!isset($_SESSION['name'])) {
                     const amount = parseFloat(document.getElementById('amount').value);
 
                     // Fetch exchange rates and perform conversion
-                    fetch(`https://openexchangerates.org/api/latest.json?app_id=1713d426779640068c09a29589c6ade8&base=${baseCurrency}`)
+                    fetch(`https://openexchangerates.org/api/latest.json?app_id=GENERATE_YOUR_TOKEN&base=${baseCurrency}`)
                         .then(response => response.json())
                         .then(data => {
                             const exchangeRate = data.rates[targetCurrency];
